@@ -1,0 +1,87 @@
+@import "../../styles/variables.scss";
+
+.home-dash {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-flow: dense;
+
+  .box {
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid $soft-bg;
+    background-color: rgba(173, 216, 230, 0.521);
+  }
+
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    grid-column: span 1;
+    grid-row: span 3;
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+
+      .logo {
+        font-size: 30px;
+        border: 1px solid white;
+      }
+
+      h3 {
+        font-size: 28px;
+        font-weight: 800;
+      }
+    }
+    p {
+      margin-top: 10px;
+      margin-left: 100px;
+      font-weight: bold;
+    }
+  }
+  .box3 {
+    h3 {
+      margin-right: 40px;
+    }
+  }
+}
+
+.home-chart {
+  margin-top: 100px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: dense;
+
+  .box5 {
+    grid-column: span 1;
+    grid-row: span 2;
+    background-color: white;
+    border: 2px solid rgb(44, 44, 57);
+    border-radius: 10px;
+
+    h3 {
+      color: black;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .box6 {
+    grid-column: span 1;
+    grid-row: span 2;
+    background-color: white;
+    border: 2px solid rgb(44, 44, 57);
+    border-radius: 10px;
+
+    h3 {
+      color: black;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
